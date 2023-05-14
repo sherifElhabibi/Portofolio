@@ -1,0 +1,688 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #112240;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #64ffda;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #64ffda;
+}
+
+::selection {
+    color: #ffffff;
+    background: #233554;
+}
+
+body {
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace !important;
+    background-color: #0a192f !important;
+
+}
+
+
+:root {
+    --background: #64ffda;
+    --color: #0A192FCC.;
+}
+
+.line {
+    color: var(--background);
+    margin: 20px auto;
+
+}
+
+*{
+scroll-behavior: smooth;
+}
+
+/*NAVIGATION BAR*/
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='%2364ffda' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    border-color: #64ffda;
+ 
+}
+
+  
+.nav-link:focus{
+    color: var(--background) !important;
+    border-bottom: 4px solid var(--background);
+}
+.mylogo:hover{
+    transform: scale(1.6);
+}
+.num {
+    color: var(--background);
+}
+
+.navbarr {
+    background-color: var(--color);
+    box-shadow: 0 10px 30px -10px rgb(2 12 27 / 70%);
+    padding: 20px;
+}
+
+.navbarr a {
+    text-decoration: none;
+    color: #ccd6f6;
+    font-weight: 600;
+    border: 0px solid var(--background);
+    font-size: 20px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.navbarr a:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    height: 4px;
+    background-color: var(--background);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;
+    transform: translateX(-50%);
+    width: 0;
+
+
+}
+
+.navbarr a:hover:before {
+    width: 100%;
+}
+.navbarr a:hover {
+    width: 100%;
+    color: var(--background);
+}
+
+.cv {
+    border: 0px solid var(--background);
+    border-radius: 2px;
+    color: var(--background);
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.cv {
+    border: 0px solid var(--background);
+    border-radius: 2px;
+    color: var(--background);
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
+/*SMALL SCREEEN*/
+/* .navbarr-small {
+    background-color: var(--color);
+    padding: 30px;
+
+}
+
+.smallmenu a {
+    text-decoration: none;
+    color: #ccd6f6;
+    transition: 0.3s;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.smallmenu {
+    background-color: var(--color);
+    transition: 0.3s;
+    box-shadow: 0 50px 40px -10px rgb(2 12 27 / 70%);
+    padding: 30px;
+}
+
+.smallmenu a:hover {
+    color: var(--background);
+    box-shadow: 3px 3px var(--background);
+
+}
+
+.cv1 {
+    color: var(--background);
+    padding: 10px;
+    font-size: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 800;
+} */
+
+
+/* .navmenu-parent {
+    border: 1px solid #ccd6f6;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #ccd6f6;
+    padding: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.navmenu {
+    font-size: 20px;
+    color: #ccd6f6;
+    padding: 5px;
+    cursor: pointer;
+    rotate: 90deg;
+    transition: transform 0.3s ease-in-out;
+} */
+
+.headline {
+    color: var(--background);
+}
+
+.parentheadings {
+    padding: 60px;
+    margin-top: 50px;
+}
+
+.logo {
+    width: 80px;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
+/* .myimage-container{
+    width: 100%;
+    height: 50%;
+
+} */
+/*MY IMAGE & MY NAME*/
+.smallheadings {
+    font-size: 18px;
+    color: #64ffda;
+}
+
+.headings,
+.subheadings {
+    font-size: 65px;
+    color: #ccd6f6;
+    font-weight: 600;
+    letter-spacing: 0px;
+    font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+}
+
+.subheadings {
+    color: #8892b0;
+}
+
+.myparagraph {
+    max-width: 900px;
+    font-size: 18px;
+    color: #8892b0;
+    font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+    margin-top: 20px;
+}
+
+.contactbutton {
+    border: 1px solid var(--background);
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 2.7vw;
+    margin-top: 70px;
+    border-radius: 5px;
+    max-width: 400px;
+    box-shadow: 10px 10px 30px rgb(2 12 27 / 70%);
+
+}
+
+.contactbutton a {
+    color: var(--background);
+    text-decoration: none;
+}
+
+.contactbutton:hover {
+    box-shadow: 5px 5px 5px var(--background);
+    transform: translateY(-5px);
+}
+
+.contactbutton:hover a {
+    color: var(--background);
+}
+
+
+.links {
+    font-size: 2.5vw;
+    margin-left: 20px;
+    color: #ccd6f6;
+    transition: 0.3s;
+    position: relative;
+    bottom: 0;
+
+}
+
+.links:hover {
+    color: var(--background);
+    bottom: 5px;
+
+
+}
+
+.contactme {
+    border: 1px solid #ccd6f6;
+    border-radius: 50px;
+    color: #ccd6f6;
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contactme:hover {
+    border: 1px solid var(--background);
+    color: var(--background);
+}
+
+.myimg {
+    background: linear-gradient(#51585e);
+    transition: 0.3s;
+    background-image: url(./img.jpg);
+    border-radius: 20px;
+    width: 350px;
+    height: 550px;
+    margin: 20px auto;
+    background-size: 121%;
+    background-position: 100% top;
+    position: relative;
+    background-repeat: no-repeat;
+    box-shadow: 10px 20px 30px rgb(2 12 27 / 70%);
+
+  }
+  @media (max-width: 768px) {
+    .myimg {
+      background-image: url(img\ -\ Copy.jpg);
+      border-radius: 50%; /* make the image circular */
+      width: 250px;
+      height: 250px;
+      background-position: 50% top;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .myimg {
+      background-image: url(img\ -\ Copy.jpg);
+      border-radius: 50%; /* make the image circular */
+      width: 250px;
+      height: 250px;
+      background-position: 50% top;
+    }
+  }
+   /* .myimg::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 2px solid #64ffda;
+    top: 14px;
+    left: 14px;
+    z-index: -1;
+    transition: 0.3s;
+  } 
+  
+  .myimg:hover:after {
+    transform: translate(5px, 5px);
+
+  } */
+  
+  .info-label {
+    font-weight: bold;
+  }
+  
+  .contact-info p {
+    margin-bottom: 8px;
+  }.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .col-10 {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .design {
+    color: #555;
+    font-size: 1.2rem;
+  }
+  
+  .info {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: #333;
+  }
+
+
+.lineheight {
+    line-height: 4;
+}
+
+.myname {
+    font-size: 60px;
+    color: var(--background);
+    letter-spacing: 10px;
+    border: 1px solid var(--background);
+    /* border-right: 0;
+    border-top: 0; */
+    padding: 20px;
+    margin: auto;
+
+
+}
+
+.section {
+    margin-top: 50px;
+}
+
+/*TYPING*/
+.myname1 {
+    color: var(--background);
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+
+/*ABOUT ME*/
+.aboutme {
+    color: #ccd6f6;
+    font-weight: 600;
+
+}
+
+.sometextaboutme {
+    color: #8892b0;
+    font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+    line-height: 2.4;
+}
+
+.skills {
+    list-style: square;
+    color: #64ffda;
+    font-size: 15px;
+}
+.mylogo:hover{
+    transform: scale(1.1);
+}
+.numheads {
+    /* font-size: 60px; */
+    font-weight: 600;
+    color: var(--background);
+}
+
+.info {
+    color: #ccd6f6;
+}
+
+/*DESIGN TABLE*/
+table {
+    margin: 20px auto;
+}
+
+.design {
+    color: var(--background);
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+/*MY WORK*/
+.parentofimg {
+    margin-bottom: 100px;
+}
+
+.attend {
+    /* position: relative; */
+    width: 100%;
+    transition: 0.3s;
+    opacity: 0.5;
+    border-radius: 20px;
+
+
+}
+
+.parentofimg:hover .attend {
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+.attendhead {
+    color: #ccd6f6;
+}
+
+.skill1 {
+    font-size: 80px;
+    text-align: center;
+    color: var(--background);
+    padding: 20px;
+}
+
+
+.containermod {
+    margin-top: 20px;
+    width:100%;
+}
+
+.title {
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 10px
+}
+
+.content {
+    position: relative;
+    width: 70%;
+    /* max-width: 800px; */
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 10px 20px 30px rgb(2 12 27 / 70%);
+}
+
+.content .content-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    border-radius: 20px;
+
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s
+}
+
+.content:hover .content-overlay {
+    opacity: 1;
+}
+
+.content-image {
+    width: 100%;
+    
+}
+
+.content-title{
+    font-size: 30px;
+    color: var(--background);
+
+}
+.content img {
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 20px
+}
+.content i {
+    font-size: 35px;
+    color: var(--background);
+}
+
+
+.content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s
+}
+
+.content:hover .content-details {
+    top: 50%;
+    left: 50%;
+    opacity: 1
+}
+
+.content-details h3 {
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase
+}
+
+.content-details p {
+    color: #fff;
+    font-size: 0.8em
+}
+
+.fadeIn-bottom {
+    top: 80%
+}
+
+
+/*EDUCATION*/
+.myeducation div {
+    font-size: 30px;
+    color: var(--background);
+}
+
+.myeducation p {
+    font-size: 30px;
+    color: #8892b0;
+}
+
+
+  /*CONTACT*/
+  .hibutton {
+    border: 1px solid var(--background);
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1.3vw;
+    margin-top: 70px;
+    border-radius: 5px;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+  
+  .hibutton a {
+    color: var(--background);
+    text-decoration: none;
+  }
+  
+  .hibutton:hover {
+    box-shadow: 0px 5px 5px var(--background);
+    transform: translateY(-5px);
+  }
+  
+  .hibutton:hover a {
+    color: var(--background);
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .skills-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .skill {
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .skill-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--background);
+    font-size: 60px;
+  }
+  
+  .skill-percentage {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .skill-percentage svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+  }
+  
+  .skill-percentage circle {
+    fill: transparent;
+    stroke: #64ffda;
+
+    stroke-dasharray: 314;
+    stroke-linecap: round;
+  }
+  
+  .percentage-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bold;
+    color: #64ffda;
+  }
+  
+  .percentage-value {
+    font-size: 28px;
+  }
+  
+  .percentage-sign {
+    font-size: 16px;
+    margin-left: 2px;
+  }
+  
