@@ -55,10 +55,10 @@ scroll-behavior: smooth;
 }
 
   
-.nav-link:focus{
+/* .nav-link:focus{
     color: var(--background) !important;
     border-bottom: 4px solid var(--background);
-}
+} */
 .mylogo:hover{
     transform: scale(1.6);
 }
